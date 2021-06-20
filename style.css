@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdE1zwHJbdgoN4Th6GNyavxvKQqh4ZVjUkvg&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  h1 {
+
+    font-size: 36px;
+    margin: 5px;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #board {
+    max-width: auto; 
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(59, 59, 161);
+    transition: background-color 400ms;
+    margin: 4px;
+  }
+
+  #board.correct {
+    background-color: lightseagreen;
+  }
+
+  #board.initial {
+    pointer-events: none;
+  }
+
+
+  #board li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    margin: 6px;
+    list-style: none;
+    border-radius: 6px;
+    background-color: oldlace;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px -10px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  #board li.open {
+    pointer-events: none;
+  }
+
+  #board.finish {
+    pointer-events: none;
+  }
+
+  #board.hide {
+    display: none;
+  }
+  
+  #start {
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: mediumseagreen;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 20px 10px 20px -15px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  #start:active {
+    cursor: grab;
+    transform: scale(0.9);
+  }
+
+  #start.hide {
+    display: none;
+  }
+
+  .N.done, .M.done, .URL.done {
+      display: none;
+  }
+
+
+  label, input {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  div.N, div.M, div.URL {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+ .submit {
+    font-family: 'Poppins', sans-serif;
+    background-color: mediumseagreen;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 20px 10px 20px -15px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+ }
+
+form {
+    
+}
